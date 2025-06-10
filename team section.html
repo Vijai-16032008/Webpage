@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Section </title>
+  <h2>INLINE-BLOCK</h2>
+  <style>
+    
+    .team-section {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .team-card {
+      display: inline-block; /* Horizontal layout */
+      width: 200px;
+      margin: 10px;
+      padding: 20px;
+      vertical-align: top;
+      background: #f4f4f4;
+      border-radius: 8px;
+      box-shadow:gray;
+    }
+    .team-card.hide {
+      display: none; /* Hide this card */
+    }
+    footer {
+      display: block; /* Block-level footer */
+      width: 100%;
+      background: #222;
+      color: aqua;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 1.1em;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+    
+  <section class="team-section">
+    <div class="team-card">
+      <h3>Tarun</h3>
+      <p>Frontend Developer</p>
+    </div>
+    <div class="team-card">
+      <h3>Kishore S.M</h3>
+      <p>Backend Developer</p>
+    </div>
+    <div class="team-card hide">
+      <h3>Abdul Fattack</h3>
+      <p>UI/UX Designer</p>
+    </div>
+    <div class="team-card">
+      <h3>VijaiAnand</h3>
+      <p>Project Manager</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025  Team. All rights reserved.
+  </footer>
+</body>
+</html>
