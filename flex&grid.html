@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>2x2 Product Galleries: Flex and Grid</title>
+  <style>
+    /* Flexbox Gallery */
+    .gallery-flex {
+      display: flex;
+      flex-wrap: wrap;
+      width: 420px;
+      margin-bottom: 40px;
+      border: 2px solid #ccc;
+      padding: 10px;
+      gap: 10px;
+    }
+    .gallery-flex .product {
+      flex: 0 0 calc(50% - 10px);
+      box-sizing: border-box;
+      background: #f8f8f8;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    /* Grid Gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+      width: 420px;
+      border: 2px solid #ccc;
+      padding: 10px;
+    }
+    .gallery-grid .product {
+      background: #e8f0fe;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>Flexbox 2x2 Gallery</h2>
+  <div class="gallery-flex">
+    <div class="product">Product 1</div>
+    <div class="product">Product 2</div>
+    <div class="product">Product 3</div>
+    <div class="product">Product 4</div>
+  </div>
+
+  <h2>Grid 2x2 Gallery</h2>
+  <div class="gallery-grid">
+    <div class="product">Product 1</div>
+    <div class="product">Product 2</div>
+    <div class="product">Product 3</div>
+    <div class="product">Product 4</div>
+  </div>
+</body>
+</html>
